@@ -1,7 +1,12 @@
 void main(List<String> args) {
   Car car = Car("Toyota", "Red");
+  Car carwithBrand = Car.withBrand("Honda");
+  Car carwithColor = Car.withColor("Blue");
+
   print(car.brand);
   print(car.color);
+  print(carwithBrand.brand);
+  print(carwithColor.color);
 }
 
 class Car {
@@ -20,6 +25,10 @@ class Car {
 
   // Initializing formal parameters
   // Car(this.brand, this.color);
+
+  // Named constructor
+  Car.withBrand(this.brand);
+  Car.withColor(this.color);
 
   void road() {
     print("Ngengg.... ngeng....");
