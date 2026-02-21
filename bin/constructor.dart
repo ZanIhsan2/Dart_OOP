@@ -18,6 +18,9 @@ class Car {
     this.brand = paramBrand;
   }
 
+  // Initializing formal parameters
+  // Car(this.brand, this.color);
+
   void road() {
     print("Ngengg.... ngeng....");
   }
