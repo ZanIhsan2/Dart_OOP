@@ -12,6 +12,10 @@ class Car {
   Car(String paramBrand, String paramColor) {
     brand = paramBrand;
     color = paramColor;
+
+    // This keyword is used to refer to the current instance of the class. It is often used to differentiate between instance variables and parameters with the same name.
+    this.color = paramColor;
+    this.brand = paramBrand;
   }
 
   void road() {
