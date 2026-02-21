@@ -13,6 +13,7 @@ class Car {
   String brand = "Unknow";
   final int wheel = 4;
   String? color;
+  int seat = 2;
 
   Car(String paramBrand, String paramColor) {
     brand = paramBrand;
@@ -27,7 +28,9 @@ class Car {
   // Car(this.brand, this.color);
 
   // Named constructor
-  Car.withBrand(this.brand);
+  Car.withBrand(this.brand) : seat = 4, color = "Yellow"  {
+    print("Objek Mobil ini memiliki $seat kursi dan berwarna $color");
+  } // initializer list digunakan untuk menginisialisasi variabel sebelum constructor body dieksekusi
   Car.withColor(this.color);
 
   void road() {
