@@ -7,6 +7,20 @@ void main(List<String> args) {
   print(car.color);
   print(carwithBrand.brand);
   print(carwithColor.color);
+
+  Person person = Person.create();
+  Person person2 = Person.create();
+  
+  print(person == person2);
+}
+
+// Factory constructor
+class Person {
+  Person();
+  static final Person _person = Person();
+  factory Person.create() {
+    return _person;
+  }
 }
 
 class Car {
